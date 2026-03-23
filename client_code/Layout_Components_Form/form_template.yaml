@@ -1,0 +1,86 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'ZGDUCO,CKSVVO'}
+    name: grid_panel_1
+    properties: {}
+    type: GridPanel
+  - layout_properties: {grid_position: 'GFSUSU,TCLACP'}
+    name: linear_panel_1
+    properties: {}
+    type: LinearPanel
+  - layout_properties: {grid_position: 'UCQNZV,FCQVNT'}
+    name: xy_panel_1
+    properties: {height: 100}
+    type: XYPanel
+  - layout_properties: {grid_position: 'LOYFHB,DWGMOB'}
+    name: flow_panel_1
+    properties: {}
+    type: FlowPanel
+  - layout_properties: {grid_position: 'MLYMDM,UQWBIW'}
+    name: label_2
+    properties: {text: Nested Containers}
+    type: Label
+  - components:
+    - layout_properties: {width: 258.2734375}
+      name: linear_panel_2
+      properties: {}
+      type: LinearPanel
+    layout_properties: {grid_position: 'QFEQKH,ZZXFBU'}
+    name: flow_panel_2
+    properties: {}
+    type: FlowPanel
+  - components:
+    - layout_properties: {width: 200, x: 477, y: 50.3125}
+      name: grid_panel_2
+      properties: {}
+      type: GridPanel
+    layout_properties: {grid_position: 'GHXJBT,FLRPJP'}
+    name: xy_panel_2
+    properties: {height: 100}
+    type: XYPanel
+  - components:
+    - layout_properties: {col_xs: 3, row: EFDXRT, width_xs: 4}
+      name: xy_panel_3
+      properties: {height: 100}
+      type: XYPanel
+    - layout_properties: {col_xs: 7, row: EFDXRT, width_xs: 4}
+      name: column_panel_2
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'CHVYGC,ZBLDMW'}
+    name: grid_panel_3
+    properties: {}
+    type: GridPanel
+  - components:
+    - layout_properties: {width: 183.7734375}
+      name: grid_panel_4
+      properties: {}
+      type: GridPanel
+    layout_properties: {grid_position: 'DUTRBW,IYVIPU'}
+    name: flow_panel_3
+    properties: {}
+    type: FlowPanel
+  - layout_properties: {grid_position: 'VIXZIF,IWXNBL'}
+    name: linear_panel_3
+    properties: {}
+    type: LinearPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Layout Components Form}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

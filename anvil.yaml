@@ -1,12 +1,17 @@
 allow_embedding: false
 dependencies: []
-name: M3 App 1
-package_name: M3_App_1
+metadata: {description: This app teaches Claude how to code and Anvil Works application, title: Claude Anvil Works Skill}
+name: Claude_Anvil_Skills_v1.0
+package_name: Claude_Anvil_Skills_v1_0
 renamed: true
 runtime_options:
   client_version: '3'
   legacy_features: {bootstrap3: true, class_names: true}
-  server_spec: {base: python310-minimal}
+  server_spec: {base: python310-standard}
   version: 3
-services: []
-startup_form: Form1
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup: {module: Layout_Components_Form, type: form}
+startup_form: null

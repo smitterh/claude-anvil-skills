@@ -1,0 +1,83 @@
+components:
+- components:
+  - components:
+    - name: repeating_panel_1
+      properties: {item_template: Data_Components_Form.RowTemplate1}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'QABAOS,BTESNF'}
+    name: data_grid_1
+    properties:
+      columns:
+      - {data_key: column_1, id: JKSDUP, title: Column 1}
+      - {data_key: column_2, id: VJQQOR, title: Column 2}
+      - {data_key: column_3, id: OJLQEN, title: Column 3}
+    type: DataGrid
+  - layout_properties: {grid_position: 'BNUQMP,XEMBKT'}
+    name: data_row_panel_1
+    properties: {}
+    type: DataRowPanel
+  - layout_properties: {grid_position: 'IBFGYB,CWVKBG'}
+    name: repeating_panel_2
+    properties: {item_template: Data_Components_Form.ItemTemplate1}
+    type: RepeatingPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - components:
+    - event_bindings: {}
+      layout_properties: {grid_position: 'VHKLOZ,BXBSRY'}
+      name: link_4
+      properties: {background: 'theme:Primary', text: Input and Display}
+      type: Link
+    - components:
+      - event_bindings: {}
+        layout_properties: {grid_position: 'CHFFDN,WHVKSH'}
+        name: link_5
+        properties: {background: 'theme:Primary', text: Data Components}
+        type: Link
+      layout_properties: {grid_position: 'NREJDI,NSYOEA'}
+      name: column_panel_3
+      properties: {}
+      type: ColumnPanel
+    - components:
+      - event_bindings: {}
+        layout_properties: {grid_position: 'DAKZOA,TXEXYV'}
+        name: link_7
+        properties: {background: 'theme:Primary', text: Other Components}
+        type: Link
+      layout_properties: {grid_position: 'UWUYUS,YLDQMM'}
+      name: column_panel_5
+      properties: {}
+      type: ColumnPanel
+    - components:
+      - event_bindings: {}
+        layout_properties: {grid_position: 'ZECANG,ERNKJO'}
+        name: link_6
+        properties: {background: 'theme:Primary', text: Home}
+        type: Link
+      layout_properties: {grid_position: 'DARHTW,EIPEXF'}
+      name: column_panel_4
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: ''}
+    name: column_panel_2
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {text: Data Components}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

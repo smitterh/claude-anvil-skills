@@ -14,3 +14,9 @@ class Input_Display_Components_Form(Input_Display_Components_FormTemplate):
     """This method is called when the link is clicked"""
     open_form('Layout_Components_Form')
     pass
+
+  @handle("button_1", "click")
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.text_box_1.text = "Hello!"
+    pass

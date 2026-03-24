@@ -36,9 +36,10 @@ components:
     properties: {text: Display Components}
     type: Label
   - components:
-    - layout_properties: {col_xs: 0, row: YOSFLS, width_xs: 4}
+    - event_bindings: {}
+      layout_properties: {col_xs: 0, row: YOSFLS, width_xs: 4}
       name: button_1
-      properties: {icon: 'fa:500px', text: button_1}
+      properties: {background: 'theme:Primary Container', foreground: 'theme:Primary', icon: 'fa:500px', text: button_1}
       type: Button
     - layout_properties: {col_xs: 8, row: YOSFLS, width_xs: 4}
       name: image_1
@@ -73,10 +74,11 @@ components:
   name: label_1
   properties: {text: Input and Display Components Form}
   type: Label
-- event_bindings: {}
+- data_bindings: []
+  event_bindings: {}
   layout_properties: {slot: left-nav}
   name: link_2
-  properties: {text: Home}
+  properties: {text: '    Home'}
   type: Link
 container:
   properties: {html: '@theme:standard-page.html'}
